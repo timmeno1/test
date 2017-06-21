@@ -1,0 +1,102 @@
+/* --------      styles of main page ------------------ */
+
+.nav-styles {
+	background-color:#FFD526;
+}
+
+.slider {
+	margin-bottom:10px;
+}
+
+.lamp-about {
+
+}
+
+.products-gallery {
+
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+background-color:#E5C022;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+background-color:#E5C022;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color:#0F0D02;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color:#0F0D02;
+}
+
+.navbar-default .navbar-brand {
+	color:#0F0D02;
+}
+
+.panel-primary>.panel-heading {
+    color: #0F0D02;
+    background-color: #FFD526;
+    border-color: #FFD526;
+}
+
+.panel-primary {
+    border-color: #FFD526;
+}
+
+.navbar-default {
+    border-color: #ffd526;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #0f0d02;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #0f0d02;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #E5C022;
+}
+
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #0f0d02;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #0f0d15;
+}
+
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {	
+    color: #5e5e5e;
+    background-color: #E5C022;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #5e5e5e;
+    background-color: #E5C022;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    color: #5e5e5e;
+    background-color: #E5C022;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #5e5e5e;
+    background-color: #E5C022;
+}
+
+.dropdown-menu {
+
+    background-color: #FFD526;
+}
+
+body {
+	COLOR:#141103;
+}
