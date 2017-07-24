@@ -1,0 +1,245 @@
+ @import url("font-awesome.min.css");
+// Variables
+
+@green:#33CC99;
+@gray:#484848;
+
+
+// Fonts
+
+@font-face {
+  font-family: rubik;
+  src: url('../fonts/rubik-regular.eot');
+  src: url('../fonts/rubik-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/rubik-regular.woff2') format('woff2'),
+       url('../fonts/rubik-regular.woff') format('woff'),
+       url('../fonts/rubik-regular.ttf')  format('truetype'),
+       url('../fonts/rubik-regular.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: cuprum;
+  src: url('../fonts/cuprum-regular.eot');
+  src: url('../fonts/cuprum-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/cuprum-regular.woff2') format('woff2'),
+       url('../fonts/cuprum-regular.woff') format('woff'),
+       url('../fonts/cuprum-regular.ttf')  format('truetype'),
+       url('../fonts/cuprum-regular.svg#svgFontName') format('svg');
+}
+
+@font-face {
+	font-family: awesome;
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('../fonts/fontawesome-webfont.woff') format('woff'),
+       url('../fonts/fontawesome-webfont.ttf')  format('truetype'),
+       url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg');
+}
+
+
+// Common styles
+
+
+body *{
+	color:@gray;
+	font-family: rubik, Arial, sans-serif ;
+}
+
+a {
+	color:@green;
+}
+a:hover {
+	text-decoration:none;
+	color:darken(@green,10%);
+}
+
+a:focus  {
+	text-decoration:none;
+	color:darken(@green,10%);
+}
+
+
+* {
+	outline:none!important;
+}
+
+
+
+// NAVBAR 
+
+nav.navbar{
+	border:0;
+	background: @green;
+	margin-bottom: 20px;
+	font-weight:600;
+	
+	.navbar-header {
+
+		.navbar-brand{
+			color:@gray;
+			margin-left:0;
+		}
+		.navbar-toggle {
+			background: @green;
+			border-color: @gray;
+			span {
+				background-color:@gray;
+			}
+		}
+	}
+
+	.navbar-collapse {
+		border-color: #484848;
+		background-color:@green;
+		
+		.navbar-nav {
+			a {
+				color:@gray;
+				background-color:@green;
+			}
+			.active {
+				a {
+					color:lighten(@gray,80%);
+					background-color:darken(@green,10%);
+				}
+			}
+			a:hover {
+				color:lighten(@gray,80%);
+				background-color:darken(@green,10%);
+			}
+
+			.dropdown-menu {
+					background-color:@green;
+				a{
+					color:@gray;
+					background-color:@green;
+				}
+				a:hover{
+					color:lighten(@gray,80%);
+					background-color:darken(@green,10%);
+				}
+			}
+			.open > a, 
+			.open > a:hover, 
+			.open > a:focus {
+				color:lighten(@gray,80%);
+				background-color:darken(@green,10%);
+			}			
+		}
+	}
+}
+
+
+// SLIDER
+
+
+.slider {
+	margin-bottom:50px;
+	.carousel {
+		a {
+			opacity:0.6;
+			background:transparent;
+			span{
+				color:#fff;
+			}
+		}
+		a:hover {
+			opacity:0.9;
+		}
+		.carousel-caption {
+			background:rgba(41,163,122, 0.5);
+		}
+		.fa {
+			position:relative;
+			color:#fff;
+			font-size:50px;
+			top:150px;
+		}
+	}
+}
+
+
+
+// Lamp-about
+
+.lamp-about {
+	margin-top:50px;
+	.lamp-content {
+		.lamp-image {
+			padding-left:20%;
+			float:left;
+		}
+		h4 {
+			font-size:20px;
+			font-weight: 600;
+			text-align:center;
+		}
+		p {
+			text-align:center;
+			padding:10px 30px;
+			
+		}
+		img {
+			width:200px;
+		}
+		margin-bottom:50px;
+	}
+	.lamp-content:nth-child(2) {
+		.lamp-image {
+			padding-left:14%;
+			float:right;
+		}
+	}
+}
+
+
+
+
+
+
+// FOOTER
+
+
+.footer {
+	margin-top:30px;
+	padding-top:15px;
+	padding-bottom:15px;
+	background:@green;
+	
+	a {
+		color:@gray;
+	}
+
+
+	a:hover {
+		color:#fff;
+	}
+	
+	h3 {
+		padding-left:50px;
+	}
+
+	ul {
+		list-style:none;
+		padding-left:50px;
+		text-align:left;
+		padding-bottom:10px;
+		
+		.fa{
+			font-size:16px;
+		}
+		.fa-whatsapp {
+			font-weight:bold;
+		}
+	}
+
+	.social {
+		a {
+			padding-left:10px;
+		}
+
+		li:nth-child(2) a{
+			padding-left:7px;
+		}
+	}
+}

@@ -1,102 +1,165 @@
-/* --------      styles of main page ------------------ */
-
-.nav-styles {
-	background-color:#FFD526;
+@import url("font-awesome.min.css");
+@font-face {
+  font-family: rubik;
+  src: url('../fonts/rubik-regular.eot');
+  src: url('../fonts/rubik-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/rubik-regular.woff2') format('woff2'), url('../fonts/rubik-regular.woff') format('woff'), url('../fonts/rubik-regular.ttf') format('truetype'), url('../fonts/rubik-regular.svg#svgFontName') format('svg');
 }
-
+@font-face {
+  font-family: cuprum;
+  src: url('../fonts/cuprum-regular.eot');
+  src: url('../fonts/cuprum-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/cuprum-regular.woff2') format('woff2'), url('../fonts/cuprum-regular.woff') format('woff'), url('../fonts/cuprum-regular.ttf') format('truetype'), url('../fonts/cuprum-regular.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: awesome;
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#svgFontName') format('svg');
+}
+body * {
+  color: #484848;
+  font-family: rubik, Arial, sans-serif;
+}
+a {
+  color: #33cc99;
+}
+a:hover {
+  text-decoration: none;
+  color: #29a37a;
+}
+a:focus {
+  text-decoration: none;
+  color: #29a37a;
+}
+* {
+  outline: none!important;
+}
+nav.navbar {
+  border: 0;
+  background: #33cc99;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+nav.navbar .navbar-header .navbar-brand {
+  color: #484848;
+  margin-left: 0;
+}
+nav.navbar .navbar-header .navbar-toggle {
+  background: #33cc99;
+  border-color: #484848;
+}
+nav.navbar .navbar-header .navbar-toggle span {
+  background-color: #484848;
+}
+nav.navbar .navbar-collapse {
+  border-color: #484848;
+  background-color: #33cc99;
+}
+nav.navbar .navbar-collapse .navbar-nav a {
+  color: #484848;
+  background-color: #33cc99;
+}
+nav.navbar .navbar-collapse .navbar-nav .active a {
+  color: #ffffff;
+  background-color: #29a37a;
+}
+nav.navbar .navbar-collapse .navbar-nav a:hover {
+  color: #ffffff;
+  background-color: #29a37a;
+}
+nav.navbar .navbar-collapse .navbar-nav .dropdown-menu {
+  background-color: #33cc99;
+}
+nav.navbar .navbar-collapse .navbar-nav .dropdown-menu a {
+  color: #484848;
+  background-color: #33cc99;
+}
+nav.navbar .navbar-collapse .navbar-nav .dropdown-menu a:hover {
+  color: #ffffff;
+  background-color: #29a37a;
+}
+nav.navbar .navbar-collapse .navbar-nav .open > a,
+nav.navbar .navbar-collapse .navbar-nav .open > a:hover,
+nav.navbar .navbar-collapse .navbar-nav .open > a:focus {
+  color: #ffffff;
+  background-color: #29a37a;
+}
 .slider {
-	margin-bottom:10px;
+  margin-bottom: 50px;
 }
-
+.slider .carousel a {
+  opacity: 0.6;
+  background: transparent;
+}
+.slider .carousel a span {
+  color: #fff;
+}
+.slider .carousel a:hover {
+  opacity: 0.9;
+}
+.slider .carousel .carousel-caption {
+  background: rgba(41, 163, 122, 0.5);
+}
+.slider .carousel .fa {
+  position: relative;
+  color: #fff;
+  font-size: 50px;
+  top: 150px;
+}
 .lamp-about {
-
+  margin-top: 50px;
 }
-
-.products-gallery {
-
+.lamp-about .lamp-content {
+  margin-bottom: 50px;
 }
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-background-color:#E5C022;
+.lamp-about .lamp-content .lamp-image {
+  padding-left: 20%;
+  float: left;
 }
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-background-color:#E5C022;
+.lamp-about .lamp-content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
 }
-
-.navbar-default .navbar-nav>li>a {
-	color:#0F0D02;
+.lamp-about .lamp-content p {
+  text-align: center;
+  padding: 10px 30px;
 }
-
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-	color:#0F0D02;
+.lamp-about .lamp-content img {
+  width: 200px;
 }
-
-.navbar-default .navbar-brand {
-	color:#0F0D02;
+.lamp-about .lamp-content:nth-child(2) .lamp-image {
+  padding-left: 14%;
+  float: right;
 }
-
-.panel-primary>.panel-heading {
-    color: #0F0D02;
-    background-color: #FFD526;
-    border-color: #FFD526;
+.footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #33cc99;
 }
-
-.panel-primary {
-    border-color: #FFD526;
+.footer a {
+  color: #484848;
 }
-
-.navbar-default {
-    border-color: #ffd526;
+.footer a:hover {
+  color: #fff;
 }
-
-.navbar-default .navbar-toggle {
-    border-color: #0f0d02;
+.footer h3 {
+  padding-left: 50px;
 }
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #0f0d02;
+.footer ul {
+  list-style: none;
+  padding-left: 50px;
+  text-align: left;
+  padding-bottom: 10px;
 }
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #E5C022;
+.footer ul .fa {
+  font-size: 16px;
 }
-
-
-.navbar-default .navbar-nav .open .dropdown-menu>li>a {
-    color: #0f0d02;
+.footer ul .fa-whatsapp {
+  font-weight: bold;
 }
-
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #0f0d15;
+.footer .social a {
+  padding-left: 10px;
 }
-
-
-.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {	
-    color: #5e5e5e;
-    background-color: #E5C022;
-}
-
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #5e5e5e;
-    background-color: #E5C022;
-}
-
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    color: #5e5e5e;
-    background-color: #E5C022;
-}
-
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-    color: #5e5e5e;
-    background-color: #E5C022;
-}
-
-.dropdown-menu {
-
-    background-color: #FFD526;
-}
-
-body {
-	COLOR:#141103;
+.footer .social li:nth-child(2) a {
+  padding-left: 7px;
 }
